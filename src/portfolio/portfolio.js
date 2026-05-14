@@ -1,15 +1,14 @@
-// all the properties are optional - can be left empty or deleted
 const header = {
-  homepage: "https://github.com/Mubbyrex",
+  homepage: "https://mubbycodes.vercel.app",
   title: "MUBARAK",
 };
 
 const about = {
   name: "Mubarak Ibrahim",
-  role: ["Senior DevOps Engineer", "Cloud Infrastructure Leader"],
+  role: ["Senior DevOps Engineer", "Cloud Infrastructure Engineer"],
   description: [
-    "I drive scalable, secure cloud platforms for high-growth and regulated businesses using automation, observability, and infrastructure-as-code.",
-    "My work focuses on improving release velocity, operational resilience, and cross-functional delivery through end-to-end DevOps, SRE, and cloud engineering practices.",
+    "I build and run cloud infrastructure that holds up under pressure — multi-cloud platforms, container orchestration, and CI/CD systems across regulated and high-traffic environments including fintech, healthtech, and ecommerce.",
+    "5+ years deep in AWS, OCI, and Kubernetes. I care about automation that reduces toil, observability that surfaces real problems, and infrastructure that lets engineers ship without fear.",
   ],
   resume:
     "https://drive.google.com/file/d/1moqGeAWtrzOZzq7v0AVgC5IpWhiC-kr4/view?usp=sharing",
@@ -18,29 +17,28 @@ const about = {
     github: "https://github.com/Mubbyrex",
   },
   image: "/images/dp.jpeg",
-  location: "Lagos, Nigeria",
 };
 
 const achievements = [
   {
-    title: "Delivered production-grade platform engineering",
+    title: "Cut deployment times by 50%",
     description:
-      "Designed multi-cloud infrastructure for AWS, OCI, and GCP workloads, enabling secure service delivery with automation pipelines and observability frameworks.",
+      "Migrated legacy Jenkins pipelines to GitHub Actions with reusable workflow templates, halving release cycle times and eliminating manual deployment steps across production environments.",
   },
   {
-    title: "Scaled automation and CI/CD delivery",
+    title: "Reduced MTTR by 30%",
     description:
-      "Built reusable GitHub Actions and Jenkins workflows for containerized applications, reducing deployment time and improving reliability across development and production environments.",
+      "Rolled out end-to-end observability using OpenTelemetry, Prometheus, and Grafana — giving teams the visibility to catch and resolve incidents faster across Kubernetes and cloud-native services.",
   },
   {
-    title: "Improved operational visibility",
+    title: "Dropped operational overhead by 40%",
     description:
-      "Integrated OpenTelemetry, Prometheus, and Grafana for end-to-end monitoring, tracing, and alerting across Kubernetes and cloud-native services.",
+      "Automated infrastructure provisioning and compliance checks with Terraform and Ansible, eliminating manual toil across cloud and hybrid environments in a regulated financial services context.",
   },
   {
-    title: "Strengthened cloud security and compliance",
+    title: "Delivered multi-cloud platform for financial systems",
     description:
-      "Implemented infrastructure-as-code best practices, RBAC controls, and resilient disaster recovery strategies for finance and enterprise-grade applications.",
+      "Designed and maintained production infrastructure spanning AWS, OCI, and GCP for finance and treasury applications, with RBAC controls, disaster recovery, and IaC-driven compliance built in.",
   },
 ];
 
@@ -48,7 +46,7 @@ const projects = [
   {
     name: "Enterprise microservices modernization",
     description:
-      "Led the migration of a monolithic system into Kubernetes-based microservices, with GitHub Actions driving CI/CD and Terraform managing infrastructure across AWS and Oracle Cloud.",
+      "Led the migration of a monolithic system into Kubernetes-based microservices. GitHub Actions handles CI/CD; Terraform manages infrastructure across AWS and Oracle Cloud. Includes service mesh with Istio for traffic management and observability.",
     stack: [
       "AWS",
       "Kubernetes",
@@ -60,16 +58,16 @@ const projects = [
     sourceCode: "https://github.com/Mubbyrex/monolith-to-microservices-project",
   },
   {
-    name: "Global content delivery platform",
+    name: "CI/CD and Kubernetes pipeline architecture",
     description:
-      "Delivered a highly available static website architecture using AWS S3, CloudFront, and automated deployment pipelines for fast global performance.",
-    stack: ["AWS S3", "CloudFront", "AWS CLI", "Infrastructure as Code"],
-    sourceCode: "https://github.com/Mubbyrex/Deploy-Static-Website-on-AWS",
+      "End-to-end CI/CD pipeline for containerised applications — Jenkins, Docker, and Kubernetes wired together to support automated test, build, and deployment stages with rollback capability.",
+    stack: ["Jenkins", "Kubernetes", "Docker", "Git", "Ansible"],
+    sourceCode: "https://github.com/Mubbyrex/Jenkins-Project",
   },
   {
     name: "Serverless automation platform",
     description:
-      "Built a serverless task orchestration system using AWS Lambda, API Gateway, and DynamoDB with secure authentication and efficient cloud-native operations.",
+      "Serverless task orchestration on AWS: Lambda, API Gateway, DynamoDB, and Cognito for auth. Built to be cost-efficient and operationally lean with no servers to manage.",
     stack: [
       "AWS Lambda",
       "API Gateway",
@@ -81,30 +79,37 @@ const projects = [
     sourceCode: "https://github.com/Mubbyrex/Serverless_TODO",
   },
   {
-    name: "CI/CD and Kubernetes workflow architecture",
+    name: "Global content delivery platform",
     description:
-      "Designed an end-to-end CI/CD pipeline for containerized applications, connecting Jenkins, Docker, and Kubernetes to support automated test, build and deployment stages.",
-    stack: ["Jenkins", "Kubernetes", "Docker", "Git", "Ansible"],
-    sourceCode: "https://github.com/Mubbyrex/Jenkins-Project",
+      "Highly available static site architecture on AWS — S3 + CloudFront with automated deployment pipelines. Straightforward but a clean example of IaC-driven AWS delivery.",
+    stack: ["AWS S3", "CloudFront", "AWS CLI", "Terraform"],
+    sourceCode: "https://github.com/Mubbyrex/Deploy-Static-Website-on-AWS",
   },
 ];
 
 const skills = [
+  // Cloud
   "AWS",
+  "AZURE",
   "OCI",
-  "GCP",
+  // Containers & orchestration
   "Kubernetes",
   "Docker",
+  "Helm",
+  "Istio",
+  // IaC & config management
   "Terraform",
+  "Ansible",
+  "CloudFormation",
+  // CI/CD
   "GitHub Actions",
   "Jenkins",
-  "Helm",
+  // Observability
   "Prometheus",
   "Grafana",
   "OpenTelemetry",
+  // Core
   "Linux",
-  "Ansible",
-  "CI/CD",
   "Site Reliability Engineering",
   "Infrastructure as Code",
 ];
@@ -115,7 +120,13 @@ const contact = {
 
 const certifications = [
   {
-    title: "AWS Certified SysOps Administrator - Associate",
+    title: "AWS Certified DevOps Engineer – Professional",
+    provider: "Amazon Web Services",
+    year: "2025",
+    link: "https://www.credly.com/badges/aa3f6d9a-7039-47d5-8c12-93559ba95663",
+  },
+  {
+    title: "AWS Certified SysOps Administrator – Associate",
     provider: "Amazon Web Services",
     year: "2024",
     link: "https://cp.certmetrics.com/amazon/en/public/verify/credential/672660aea75e4de3b81c1ed0b4ba24d0",
@@ -126,79 +137,67 @@ const certifications = [
     year: "2023",
     link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=5C444A1B762BFF98856A3125DE4268059C980D372607D86340FB4DCA867FE769",
   },
-  {
-    title: "OCI Foundations Associate",
-    provider: "Oracle Cloud",
-    year: "2023",
-    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=5C444A1B762BFF98856A3125DE4268059C980D372607D86340FB4DCA867FE769",
-  },
 ];
 
 const workExperience = [
   {
-    jobTitle: "Senior DevOps Engineer & Cloud Developer",
+    jobTitle: "Senior DevOps Engineer",
     company: "Seaico Technologies Limited",
-    duration: "June 2023 - Present",
+    duration: "June 2023 – Present",
     description: [
-      "Delivered secure and automated infrastructure using Terraform, Ansible, and Kubernetes across cloud and hybrid environments.",
-      "Developed GitHub Actions pipelines to replace legacy Jenkins workflows, enabling faster release cycles and better version control integration.",
-      "Built observability platforms with OpenTelemetry, Prometheus, Grafana, and CloudWatch to support proactive incident response and performance tuning.",
-      "Implemented disaster recovery, load balancing, and service reliability improvements for production systems serving finance and treasury applications.",
-      "Partnered with product and engineering teams to align infrastructure strategy with business goals and drive measurable platform maturity.",
+      "Own the cloud infrastructure for a regulated financial services platform — multi-cloud (AWS, OCI, GCP), fully automated with Terraform and Ansible, with end-to-end observability across Kubernetes workloads.",
+      "Key outcomes: 50% reduction in deployment time, 30% improvement in MTTR, 40% drop in operational overhead.",
     ],
   },
   {
     jobTitle: "Cloud DevOps Engineer",
     company: "Zepto Leaps",
-    duration: "November 2022 - April 2023",
+    duration: "November 2022 – April 2023",
     description: [
-      "Architected resilient AWS deployments using Spot Instances, Auto Scaling, and Load Balancers for cost-efficient startup infrastructure.",
-      "Automated backup processes and infrastructure management using AWS Systems Manager and RDS snapshot automation.",
-      "Captured operational runbooks and deployment patterns to support team handover and repeatable cloud practices.",
+      "Designed and automated cost-efficient AWS infrastructure for a startup — Spot Instances, Auto Scaling, Systems Manager, and RDS backup automation.",
     ],
   },
   {
     jobTitle: "Cloud Engineer",
     company: "Cloud Heroes Africa",
-    duration: "July 2022 - May 2023",
+    duration: "July 2022 – May 2023",
     description: [
-      "Led containerization and cloud migration efforts for on-premises applications to Linode Cloud, improving scalability and maintainability.",
-      "Evaluated technology tradeoffs to recommend secure, cost-effective infrastructure solutions for client environments.",
-      "Provided operational support and cloud guidance that reduced downtime and improved system reliability for customers.",
+      "Led cloud migration and containerisation projects for client workloads onto Linode Cloud, and provided ongoing infrastructure advisory across a range of environments.",
     ],
   },
 ];
 
 const openSource = [
   {
-    title: "Reusable Terraform network modules",
+    title: "Ansible Galaxy – published automation role",
     description:
-      "Shared infrastructure code patterns for secure VPC and networking deployments in AWS and hybrid cloud environments.",
-    link: "https://github.com/Mubbyrex",
+      "Published a reusable Ansible role to Ansible Galaxy for provisioning and configuring cloud infrastructure. Available for community use.",
+    link: "https://galaxy.ansible.com/ui/standalone/roles/mubbyrex/java_installer/install/",
   },
-  {
-    title: "Community automation workflows",
-    description:
-      "Published reusable CI/CD workflows for GitHub Actions and Kubernetes deployments to help teams automate delivery safely.",
-    link: "https://github.com/Mubbyrex",
-  },
+  //   {
+  //     title: "Reusable GitHub Actions workflows",
+  //     description:
+  //       "Open workflow templates for CI/CD pipelines and Kubernetes deployments — designed to be composable and drop into any project.",
+  //     link: "https://github.com/Mubbyrex",
+  //   },
 ];
 
 const articles = [
   {
-    title: "Building production-grade observability with OpenTelemetry",
-    date: "Planned",
+    title:
+      "Building Production-Ready Ansible Roles: Lessons from Creating a Multi-Distribution Java Installer",
+    date: "June 2025",
     summary:
-      "A practical guide for senior engineers to instrument cloud-native applications and correlate logs, traces, and metrics.",
-    link: "",
+      "A deep dive into the design and development of a reusable Ansible role for installing Java across multiple Linux distributions. Covers best practices for role structure, idempotency, testing, and publishing to Ansible Galaxy.",
+    link: "https://medium.com/@mubbyrex/building-production-ready-ansible-roles-lessons-from-creating-a-multi-distribution-java-installer-8d5a13660d45",
   },
-  {
-    title: "Scaling Kubernetes for high-availability workloads",
-    date: "Planned",
-    summary:
-      "Best practices for cluster design, autoscaling, and release safety in modern cloud environments.",
-    link: "",
-  },
+  // {
+  //   title: "Scaling Kubernetes for high-availability workloads",
+  //   date: "Coming soon",
+  //   summary:
+  //     "Cluster design, autoscaling strategies, and release safety patterns for teams running Kubernetes in production.",
+  //   link: "",
+  // },
 ];
 
 export {
