@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 2rem;
 }
 
 .about__image {
@@ -23,6 +24,12 @@
 
 .about__name {
   color: var(--clr-primary);
+}
+
+.about__location {
+  margin: 0.75rem 0 1.5rem;
+  color: var(--clr-fg-alt);
+  font-weight: 500;
 }
 
 .about__role {

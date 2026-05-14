@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import { ThemeState } from "../../Context/theme";
-import { contact, projects, skills } from "../../portfolio/portfolio";
+import {
+  about,
+  achievements,
+  workExperience,
+  projects,
+  articles,
+  openSource,
+  skills,
+  contact,
+} from "../../portfolio/portfolio";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "./Navbar.css";
@@ -11,45 +20,43 @@ const Navbar = () => {
 
   const toggleNavList = () => setShowNavList(!showNavList);
 
+  const navItems = [
+    { href: "#about", label: "About", show: Boolean(about.name) },
+    { href: "#highlights", label: "Highlights", show: achievements.length },
+    {
+      href: "#work-experience",
+      label: "Experience",
+      show: workExperience.length,
+    },
+    { href: "#projects", label: "Projects", show: projects.length },
+    {
+      href: "#insights",
+      label: "Insights",
+      show: articles.length || openSource.length,
+    },
+    { href: "#skills", label: "Skills", show: skills.length },
+    { href: "#contact", label: "Contact", show: Boolean(contact.email) },
+  ];
+
   return (
     <nav className="center nav">
       <ul
         style={{ display: showNavList ? "flex" : null }}
         className="nav__list"
       >
-        {projects.length ? (
-          <li className="nav__list-item">
-            <a
-              href="#projects"
-              onClick={toggleNavList}
-              className="link link--nav"
-            >
-              Projects
-            </a>
-          </li>
-        ) : null}
-        {skills.length ? (
-          <li className="nav__list-item">
-            <a
-              href="#skills"
-              onClick={toggleNavList}
-              className="link link--nav"
-            >
-              Skills
-            </a>
-          </li>
-        ) : null}
-        {contact.email ? (
-          <li className="nav__list-item">
-            <a
-              href="#contact"
-              onClick={toggleNavList}
-              className="link link--nav"
-            >
-              Contact
-            </a>
-          </li>
-        ) : null}
+        {navItems
+          .filter((item) => item.show)
+          .map((item) => (
+            <li key={item.href} className="nav__list-item">
+              <a
+                href={item.href}
+                onClick={toggleNavList}
+                className="link link--nav"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
       </ul>
 
       <button

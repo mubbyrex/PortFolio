@@ -1,60 +1,85 @@
 import React from "react";
-import { AiFillMediumCircle } from "react-icons/ai";
-import { FaResearchgate } from "react-icons/fa";
+import { AiFillGithub, AiFillMediumCircle } from "react-icons/ai";
+import { articles, openSource } from "../../portfolio/portfolio";
 import "./BlogAndResearch.css";
 
 const BlogAndResearch = () => {
-  const blogPosts = [
-    {
-      title: "Understanding React Hooks",
-      date: "January 15, 2023",
-      link: "https://example.com/understanding-react-hooks",
-    },
-    {
-      title: "A Guide to Node.js",
-      date: "February 10, 2023",
-      link: "https://example.com/guide-to-nodejs",
-    },
-    {
-      title: "Exploring Machine Learning",
-      date: "March 5, 2023",
-      link: "https://example.com/exploring-machine-learning",
-    },
-  ];
+  const hasArticles = articles.length > 0;
+  const hasOpenSource = openSource.length > 0;
 
-  const profiles = {
-    medium: "https://medium.com/@yourprofile",
-    researchGate: "https://www.researchgate.net/profile/YourProfile",
-  };
+  if (!hasArticles && !hasOpenSource) return null;
 
   return (
-    <section
-      className="section blog-and-research reveal"
-      id="blog-and-research"
-    >
-      <h2 className="section__title">Blog and Research</h2>
-      <div className="blog-research__profiles">
-        <div className="blog-research__profile">
-          <a
-            href={profiles.medium}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="blog-research__profile-link"
-          >
-            <AiFillMediumCircle size="3em" />
-          </a>
-          <p className="blog-research__profile-label">Medium</p>
+    <section className="section insights reveal" id="insights">
+      <h2 className="section__title">Insights & Community</h2>
+      <p className="blog-research__intro">
+        I publish practical cloud engineering insights and contribute
+        open-source tooling that improves platform reliability, automation, and
+        team workflows.
+      </p>
+      <div className="blog-research__grid">
+        <div className="blog-research__panel">
+          <h3>Articles & Guides</h3>
+          {hasArticles ? (
+            articles.map((item, index) => (
+              <article key={index} className="blog-research__card">
+                <div>
+                  <h4>{item.title}</h4>
+                  <p className="blog-research__meta">{item.date}</p>
+                  <p>{item.summary}</p>
+                </div>
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="blog-research__button"
+                  >
+                    <AiFillMediumCircle size="1.2em" /> Read
+                  </a>
+                ) : (
+                  <span className="blog-research__status">Coming soon</span>
+                )}
+              </article>
+            ))
+          ) : (
+            <p className="blog-research__empty">
+              Practical articles for senior DevOps, cloud architecture, and
+              production reliability are on the roadmap.
+            </p>
+          )}
         </div>
-        <div className="blog-research__profile">
-          <a
-            href={profiles.researchGate}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="blog-research__profile-link"
-          >
-            <FaResearchgate size="3em" />
-          </a>
-          <p className="blog-research__profile-label">Research Gate</p>
+        <div className="blog-research__panel">
+          <h3>Open source & community</h3>
+          {hasOpenSource ? (
+            openSource.map((item, index) => (
+              <article key={index} className="blog-research__card">
+                <div>
+                  <h4>{item.title}</h4>
+                  <p className="blog-research__meta">{item.description}</p>
+                </div>
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="blog-research__button"
+                  >
+                    <AiFillGithub size="1.2em" /> Explore
+                  </a>
+                ) : (
+                  <span className="blog-research__status">
+                    Active contribution
+                  </span>
+                )}
+              </article>
+            ))
+          ) : (
+            <p className="blog-research__empty">
+              Open source contributions and community tooling will be
+              highlighted here as they expand.
+            </p>
+          )}
         </div>
       </div>
     </section>

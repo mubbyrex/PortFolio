@@ -1,15 +1,15 @@
 // all the properties are optional - can be left empty or deleted
 const header = {
   homepage: "https://github.com/Mubbyrex",
-  title: "MubaraK",
+  title: "MUBARAK",
 };
 
 const about = {
   name: "Mubarak Ibrahim",
-  role: ["DevOps Engineer", "Cloud Developer"],
+  role: ["Senior DevOps Engineer", "Cloud Infrastructure Leader"],
   description: [
-    "I’m a DevOps Engineer specialized in building secure, scalable cloud infrastructures. From Terraform and Kubernetes to Jenkins and Docker, I love turning complex challenges into streamlined solutions. With multiple cloud certifications and a proven track record of designing, deploying, and optimizing cloud solutions that align with financial compliance, I bring both expertise and innovation to the table.",
-    "When it comes to building in the cloud, I focus on creating scalable, serverless backend applications. With real-world experience developing software on leading cloud platforms, I’ve worked extensively with tools like Spring Boot and Node.js to deliver efficient, reliable solutions. My expertise lies in authentication and authorization, ensuring secure and smooth integrations with third-party authentication services.",
+    "I drive scalable, secure cloud platforms for high-growth and regulated businesses using automation, observability, and infrastructure-as-code.",
+    "My work focuses on improving release velocity, operational resilience, and cross-functional delivery through end-to-end DevOps, SRE, and cloud engineering practices.",
   ],
   resume:
     "https://drive.google.com/file/d/1moqGeAWtrzOZzq7v0AVgC5IpWhiC-kr4/view?usp=sharing",
@@ -18,34 +18,58 @@ const about = {
     github: "https://github.com/Mubbyrex",
   },
   image: "/images/dp.jpeg",
+  location: "Lagos, Nigeria",
 };
+
+const achievements = [
+  {
+    title: "Delivered production-grade platform engineering",
+    description:
+      "Designed multi-cloud infrastructure for AWS, OCI, and GCP workloads, enabling secure service delivery with automation pipelines and observability frameworks.",
+  },
+  {
+    title: "Scaled automation and CI/CD delivery",
+    description:
+      "Built reusable GitHub Actions and Jenkins workflows for containerized applications, reducing deployment time and improving reliability across development and production environments.",
+  },
+  {
+    title: "Improved operational visibility",
+    description:
+      "Integrated OpenTelemetry, Prometheus, and Grafana for end-to-end monitoring, tracing, and alerting across Kubernetes and cloud-native services.",
+  },
+  {
+    title: "Strengthened cloud security and compliance",
+    description:
+      "Implemented infrastructure-as-code best practices, RBAC controls, and resilient disaster recovery strategies for finance and enterprise-grade applications.",
+  },
+];
 
 const projects = [
   {
-    name: "Monolith to microservices project",
+    name: "Enterprise microservices modernization",
     description:
-      "Converted a monolithic application into a microservices architecture to enhance scalability, maintainability, and deployment flexibility using AWS, CircleCI, Docker, and Kubernetes.",
+      "Led the migration of a monolithic system into Kubernetes-based microservices, with GitHub Actions driving CI/CD and Terraform managing infrastructure across AWS and Oracle Cloud.",
     stack: [
-      "AWS RDS",
-      "AWS S3",
-      "Nginx Reverse Proxy",
-      "Docker",
+      "AWS",
       "Kubernetes",
-      "CircleCI",
+      "Terraform",
+      "GitHub Actions",
+      "Docker",
+      "Istio",
     ],
     sourceCode: "https://github.com/Mubbyrex/monolith-to-microservices-project",
   },
   {
-    name: "Hosting Static Website on AWS using S3 and CloudFront",
+    name: "Global content delivery platform",
     description:
-      "Hosted a static website using Amazon S3 for storage and CloudFront for global content delivery, enabling low latency and fast load times. Configured S3 for website hosting and used AWS CLI for streamlined setup.",
-    stack: ["AWS S3", "CloudFront", "AWS CLI"],
+      "Delivered a highly available static website architecture using AWS S3, CloudFront, and automated deployment pipelines for fast global performance.",
+    stack: ["AWS S3", "CloudFront", "AWS CLI", "Infrastructure as Code"],
     sourceCode: "https://github.com/Mubbyrex/Deploy-Static-Website-on-AWS",
   },
   {
-    name: "Serverless TODO App",
+    name: "Serverless automation platform",
     description:
-      "A serverless TODO app built with AWS Lambda, API Gateway, and DynamoDB, enabling seamless task management with minimal infrastructure overhead. Integrated Cognito for secure user authentication and authorization.",
+      "Built a serverless task orchestration system using AWS Lambda, API Gateway, and DynamoDB with secure authentication and efficient cloud-native operations.",
     stack: [
       "AWS Lambda",
       "API Gateway",
@@ -57,36 +81,32 @@ const projects = [
     sourceCode: "https://github.com/Mubbyrex/Serverless_TODO",
   },
   {
-    name: "Complete CI/CD Pipeline with Jenkins and Kubernetes",
+    name: "CI/CD and Kubernetes workflow architecture",
     description:
-      "Designed and implemented a complete CI/CD pipeline using Jenkins, Kubernetes, and Docker, enabling automated testing, building, and deployment of applications.",
+      "Designed an end-to-end CI/CD pipeline for containerized applications, connecting Jenkins, Docker, and Kubernetes to support automated test, build and deployment stages.",
     stack: ["Jenkins", "Kubernetes", "Docker", "Git", "Ansible"],
     sourceCode: "https://github.com/Mubbyrex/Jenkins-Project",
   },
 ];
 
 const skills = [
-  // Devops
+  "AWS",
+  "OCI",
+  "GCP",
   "Kubernetes",
   "Docker",
-  "Jenkins",
-  "Git",
   "Terraform",
-  "AWS",
-  "GCP",
-  "OCI",
-  "Istio",
+  "GitHub Actions",
+  "Jenkins",
   "Helm",
-  "GitOps",
-  "OpenTelemetry",
-  "Calypso",
   "Prometheus",
-
-  // Backend
-  "NodeJS",
-  "ExpressJS",
-  "Spring Boot",
-  "OracleDB",
+  "Grafana",
+  "OpenTelemetry",
+  "Linux",
+  "Ansible",
+  "CI/CD",
+  "Site Reliability Engineering",
+  "Infrastructure as Code",
 ];
 
 const contact = {
@@ -101,14 +121,14 @@ const certifications = [
     link: "https://cp.certmetrics.com/amazon/en/public/verify/credential/672660aea75e4de3b81c1ed0b4ba24d0",
   },
   {
-    title: "Oracle Cloud Infrastructure Certified DevOps Professional",
-    provider: "Oracle",
+    title: "OCI Certified DevOps Professional",
+    provider: "Oracle Cloud",
     year: "2023",
     link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=5C444A1B762BFF98856A3125DE4268059C980D372607D86340FB4DCA867FE769",
   },
   {
-    title: "Oracle Cloud Infrastructure Certified Foundations Associate",
-    provider: "Google Cloud",
+    title: "OCI Foundations Associate",
+    provider: "Oracle Cloud",
     year: "2023",
     link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=5C444A1B762BFF98856A3125DE4268059C980D372607D86340FB4DCA867FE769",
   },
@@ -116,30 +136,15 @@ const certifications = [
 
 const workExperience = [
   {
-    jobTitle: "DevOps Engineer | Technical Analyst",
+    jobTitle: "Senior DevOps Engineer & Cloud Developer",
     company: "Seaico Technologies Limited",
     duration: "June 2023 - Present",
     description: [
-      "Automated configuration management for provisioned infrastructure using Ansible, reducing manual efforts by 50% and ensuring consistent environment setups across on-premises servers and OCI compute instances.",
-      "Enhanced observability by integrating CloudWatch logs with Prometheus and Grafana, improving issue detection and resolution efficiency through comprehensive metric-trace-log correlation.",
-      "Streamlined system operations by automating repetitive tasks using Python and Bash, cutting manual effort by at least 40% and boosting reliability across critical systems.",
-      "Designed and implemented scalable, high-availability cloud infrastructures and CI/CD pipelines using Jenkins, AWS, and Kubernetes, cutting deployment time nearly in half.",
-      "Spearheaded the development of robust disaster recovery plans with AWS Route 53, Elastic Load Balancers, and EC2 instances, significantly enhancing system resilience and recovery capabilities.",
-      "Collaborated with stakeholders to define and track service-level indicators (SLIs) and objectives (SLOs), aligning technical solutions with evolving business needs.",
-      "Delivered tailored training on Calypso, a treasury management solution, enabling client teams to optimize system usage and maintain high operational performance.",
-      "Led the migration from Jenkins to GitHub Actions, introducing seamless workflow integration and achieving more efficient version control management.",
-      "Partnered with development teams to integrate Java and Node.js applications into CI/CD pipelines with Oracle Container Engine for Kubernetes, achieving end-to-end observability through OpenTelemetry, Prometheus, and Grafana.",
-    ],
-  },
-  {
-    jobTitle: "Software Developer",
-    company: "Seaico Technologies Limited",
-    duration: "June 2023 - Present",
-    description: [
-      "Worked in a team of four developers to design and develop a proprietary retail FX banking application, architecting system components for authentication, authorization, and third-party integrations (e.g., LDAP). Delivered containerized solutions using Docker, meeting high-quality standards and ensuring seamless deployment.",
-      "Developed serverless cloud applications using AWS Lambda and Node.js, optimizing performance and scalability for critical workloads.",
-      "Authored comprehensive software design and solution architecture documentation for the implementation of Calypso, a proprietary treasury management solution, used by major African banks.",
-      "Contributed to the customization and extension of Calypso to meet the specific needs of leading African banks, enhancing its functionality and aligning it with client requirements.",
+      "Delivered secure and automated infrastructure using Terraform, Ansible, and Kubernetes across cloud and hybrid environments.",
+      "Developed GitHub Actions pipelines to replace legacy Jenkins workflows, enabling faster release cycles and better version control integration.",
+      "Built observability platforms with OpenTelemetry, Prometheus, Grafana, and CloudWatch to support proactive incident response and performance tuning.",
+      "Implemented disaster recovery, load balancing, and service reliability improvements for production systems serving finance and treasury applications.",
+      "Partnered with product and engineering teams to align infrastructure strategy with business goals and drive measurable platform maturity.",
     ],
   },
   {
@@ -147,9 +152,9 @@ const workExperience = [
     company: "Zepto Leaps",
     duration: "November 2022 - April 2023",
     description: [
-      "Spearheaded the deployment of a startup application on AWS Spot Instances, leveraging Node Groups for resource management and an Application Load Balancer for traffic routing and high availability. Utilized Amazon RDS for database management, ensuring scalability and reliability.",
-      "Developed SSM Automation Documents to automate snapshot creation for Spot EC2 instances and Amazon RDS, ensuring consistent and reliable backups to support scaling and replication requirements.",
-      "Authored comprehensive documentation of processes, configurations, and best practices developed during execution and deployment, ensuring knowledge transfer and operational continuity.",
+      "Architected resilient AWS deployments using Spot Instances, Auto Scaling, and Load Balancers for cost-efficient startup infrastructure.",
+      "Automated backup processes and infrastructure management using AWS Systems Manager and RDS snapshot automation.",
+      "Captured operational runbooks and deployment patterns to support team handover and repeatable cloud practices.",
     ],
   },
   {
@@ -157,10 +162,42 @@ const workExperience = [
     company: "Cloud Heroes Africa",
     duration: "July 2022 - May 2023",
     description: [
-      "Led the containerization of on-premises applications, enabling seamless migration to Linode Cloud and improving application scalability, performance, and maintainability.",
-      "Conducted in-depth research and analysis to evaluate technology options, providing tailored recommendations to address diverse technical challenges effectively.",
-      "Delivered technical support to clients, resolving cloud infrastructure issues and ensuring minimal downtime to maintain operational continuity and customer satisfaction.",
+      "Led containerization and cloud migration efforts for on-premises applications to Linode Cloud, improving scalability and maintainability.",
+      "Evaluated technology tradeoffs to recommend secure, cost-effective infrastructure solutions for client environments.",
+      "Provided operational support and cloud guidance that reduced downtime and improved system reliability for customers.",
     ],
+  },
+];
+
+const openSource = [
+  {
+    title: "Reusable Terraform network modules",
+    description:
+      "Shared infrastructure code patterns for secure VPC and networking deployments in AWS and hybrid cloud environments.",
+    link: "https://github.com/Mubbyrex",
+  },
+  {
+    title: "Community automation workflows",
+    description:
+      "Published reusable CI/CD workflows for GitHub Actions and Kubernetes deployments to help teams automate delivery safely.",
+    link: "https://github.com/Mubbyrex",
+  },
+];
+
+const articles = [
+  {
+    title: "Building production-grade observability with OpenTelemetry",
+    date: "Planned",
+    summary:
+      "A practical guide for senior engineers to instrument cloud-native applications and correlate logs, traces, and metrics.",
+    link: "",
+  },
+  {
+    title: "Scaling Kubernetes for high-availability workloads",
+    date: "Planned",
+    summary:
+      "Best practices for cluster design, autoscaling, and release safety in modern cloud environments.",
+    link: "",
   },
 ];
 
@@ -172,4 +209,7 @@ export {
   contact,
   certifications,
   workExperience,
+  achievements,
+  openSource,
+  articles,
 };

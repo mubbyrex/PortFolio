@@ -1,0 +1,30 @@
+.highlights__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.highlight {
+  padding: 1.8rem;
+  border-radius: 22px;
+  background-color: var(--clr-bg-alt);
+  box-shadow: var(--shadow);
+}
+
+.highlight h3 {
+  margin: 0 0 0.8rem;
+  color: var(--clr-primary);
+  font-size: 1.2rem;
+}
+
+.highlight p {
+  margin: 0;
+  color: var(--clr-fg-alt);
+  line-height: 1.75;
+}
+
+@media (max-width: 900px) {
+  .highlights__grid {
+    grid-template-columns: 1fr;
+  }
+}

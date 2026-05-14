@@ -4,6 +4,13 @@
   width: 95%;
   margin: 0 auto;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header h3 {
+  letter-spacing: 0.24em;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 @media (max-width: 600px) {

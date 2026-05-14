@@ -1,82 +1,75 @@
-.footer {
-  padding: 3em 0;
-  margin-top: 4em;
+.blog-research__intro {
+  max-width: 760px;
+  margin: 0 auto 2rem;
   text-align: center;
+  color: var(--clr-fg-alt);
 }
 
-.blog-research {
-  margin: 2em 0;
+.blog-research__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
-.blog-research__title {
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-.blog-research__profiles {
+.blog-research__panel {
   display: flex;
-  justify-content: center;
-  margin-bottom: 1em;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.blog-research__profile-link {
-  margin: 0 1em;
-  color: var(--clr-primary);
-  transition: transform 0.2s ease-in-out;
+.blog-research__panel h3 {
+  margin: 0;
+  color: var(--clr-fg);
 }
 
-.blog-research__profile-link:hover {
-  transform: translateY(-5px);
-}
-
-.blog-research__list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.blog-research__item {
-  margin: 1em 0;
-  padding: 1em;
-  border: 1px solid var(--clr-fg-alt);
-  border-radius: 5px;
+.blog-research__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.6rem;
+  border-radius: 18px;
   background-color: var(--clr-bg-alt);
+  box-shadow: var(--shadow);
+  min-height: 180px;
 }
 
-.blog-research__item a {
+.blog-research__card h4 {
+  margin: 0 0 0.6rem;
+  color: var(--clr-primary);
+}
+
+.blog-research__meta {
+  margin: 0 0 1rem;
+  color: var(--clr-fg-alt);
+  font-size: 0.95rem;
+}
+
+.blog-research__button,
+.blog-research__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
   color: var(--clr-primary);
   text-decoration: none;
+  font-weight: 600;
 }
 
-.blog-research__item a:hover {
+.blog-research__button:hover {
   text-decoration: underline;
 }
 
-.section {
-  padding: 2em 0;
+.blog-research__status {
+  color: var(--clr-fg-alt);
 }
 
-.section__title {
-  text-align: center;
-  margin-bottom: 1.5em;
-  font-size: 2rem;
-  color: var(--clr-primary);
+.blog-research__empty {
+  color: var(--clr-fg-alt);
+  line-height: 1.7;
 }
 
-.blog-research__profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 1em;
-}
-
-.blog-research__profile-link {
-  color: var(--clr-primary);
-  transition: transform 0.2s ease-in-out;
-  margin-right: 0.8em; /* Match the margin from About section */
-}
-
-.blog-research__profile-label {
-  margin-top: 0.5em;
-  font-size: 1rem;
-  color: var(--clr-fg);
+@media (max-width: 900px) {
+  .blog-research__grid {
+    grid-template-columns: 1fr;
+  }
 }

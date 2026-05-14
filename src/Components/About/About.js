@@ -4,10 +4,10 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import "./About.css";
 
 const About = () => {
-  const { name, role, description, resume, social, image } = about;
+  const { name, role, description, resume, social, image, location } = about;
 
   return (
-    <div className="about center">
+    <section className="about center" id="about">
       <div className="about__container">
         <div className="about__text">
           {name && (
@@ -15,10 +15,11 @@ const About = () => {
               Hi, I am <span className="about__name">{name}</span>
             </h1>
           )}
-          {role && <h2 className="about__role">A {role[0]}.</h2>}
+          {location && <p className="about__location">{location}</p>}
+          {role && <h2 className="about__role">{role[0]}</h2>}
           <p>{description[0] && description[0]}</p>
 
-          {role && <h2 className="about__role">{role[1]}.</h2>}
+          {role && <h2 className="about__role">{role[1]}</h2>}
           <p>{description[1] && description[1]}</p>
         </div>
         <img src={image} alt="Profile" className="about__image" />
@@ -54,7 +55,7 @@ const About = () => {
           </>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
