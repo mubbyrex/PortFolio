@@ -5,10 +5,10 @@ const header = {
 
 const about = {
   name: "Mubarak Ibrahim",
-  role: ["Senior DevOps Engineer", "Cloud Infrastructure Engineer"],
+  role: ["DevOps Engineer", "Platform Engineer"],
   description: [
-    "I build and run cloud infrastructure that holds up under pressure — multi-cloud platforms, container orchestration, and CI/CD systems across regulated and high-traffic environments including fintech, healthtech, and ecommerce.",
-    "5+ years deep in AWS, OCI, and Kubernetes. I care about automation that reduces toil, observability that surfaces real problems, and infrastructure that lets engineers ship without fear.",
+    "I build secure, scalable cloud infrastructure and platform automation for regulated and high-traffic environments across fintech, healthtech, and ecommerce.",
+    "My work spans AWS, Kubernetes, Terraform, CI/CD, observability, infrastructure automation, and multi-cloud operations. I focus on reducing operational toil, improving deployment reliability, and helping engineering teams ship safely.",
   ],
   resume:
     "https://drive.google.com/file/d/1moqGeAWtrzOZzq7v0AVgC5IpWhiC-kr4/view?usp=sharing",
